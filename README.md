@@ -1,7 +1,7 @@
-# CredalLab
+# Credal reasoning
 
 Supply a small finite world model, unconditional probability intervals and an
-event query. CredalLab checks whether one joint distribution satisfies all
+event query. Credal reasoning checks whether one joint distribution satisfies all
 assessments, returns sharp attainable query bounds when it can, and exports
 primal/dual certificates for independent replay.
 
@@ -20,7 +20,7 @@ It is an original implementation of classical finite probabilistic satisfiabilit
 
 ## Decision criteria use different belief requirements
 
-Version 0.2 adds an [exact decision inspector](https://midya8.github.io/credallab/decisions.html). The menu `(3,0), (0,3), (1,1)` makes the difference visible: action 2 can defend against each rival separately, yet no common belief makes it best. A certified 50/50 rival mixture beats it everywhere by `1/2`. It is still the unique pure-action maximin choice.
+Version 0.2 adds an [exact decision inspector](https://midya8.github.io/credal-reasoning/decisions.html). The menu `(3,0), (0,3), (1,1)` makes the difference visible: action 2 can defend against each rival separately, yet no common belief makes it best. A certified 50/50 rival mixture beats it everywhere by `1/2`. It is still the unique pure-action maximin choice.
 
 The extension returns E-admissible, strict pairwise maximal, interval-undominated, pure-action maximin and maximax sets. Inspect one common attaining belief or a dual-derived randomized exclusion mixture, with every primal and dual row. No pointwise-admissibility prefilter; boundary ties stay. These are classical criteria, not a recommendation or new theorem. See [DECISIONS.md](DECISIONS.md) for exact conventions, source differences and limits.
 
